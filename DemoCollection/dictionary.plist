@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Exciter</string>
+	<key>model</key>
+	<string>Exciter Camo 2015</string>
+	<key>cylinderVolume</key>
+	<real>149.7</real>
+	<key>compressRatio</key>
+	<string>10:4:1</string>
+	<key>gasolineVolume</key>
+	<real>4.2</real>
+	<key>fuelInjection</key>
+	<true/>
+</dict>
+</plist>
