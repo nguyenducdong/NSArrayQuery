@@ -91,11 +91,15 @@
             [teamBarcelona addObject:arrTemp[rand]];
         }
     }
+    //----------------------------------------Chọn ra 11 cầu thủ không duplicate--------------------------
+    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Danh sách 11 Players ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    int index = 0;
     for (id obj in teamBarcelona) {
-        NSLog(@"player: %@",obj);
+        index++;
+        NSLog(@"player %d: %@",index,obj);
     }
     //----------------------------------------dung category--------------------------
-    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮Category✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮Category✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
     NSArray *array = [NSArray array];
     NSMutableArray *arrayRandom = [NSMutableArray new];
     for (NSInteger index = 0; index < 11; index++) {
@@ -103,12 +107,12 @@
         [arrayRandom addObject:players[rand]];
         
     }
-     NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array random ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+     NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array random ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
     for (id obj in arrayRandom) {
         NSLog(@"arrayRandom: %@",obj);
     }
     array = [NSArray createArrayNotElementDuplicateWith:arrayRandom];
-    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array No Duplicate ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array No Duplicate ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
     for (id obj in array) {
         NSLog(@"arrayNoDuplicate: %@",obj);
     }
