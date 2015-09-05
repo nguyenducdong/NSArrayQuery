@@ -23,6 +23,7 @@
 		5EC33F7F1B53D46400E3613C /* CreateDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC33F7E1B53D46400E3613C /* CreateDictionary.m */; };
 		5EC33F811B53D4F400E3613C /* dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC33F801B53D4F400E3613C /* dictionary.plist */; };
 		5EC33F841B54256800E3613C /* MutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC33F831B54256800E3613C /* MutableArray.m */; };
+		6F7E48F11B9A90BB0046B9AC /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E48F01B9A90BB0046B9AC /* NSArray+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		5EC33F801B53D4F400E3613C /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
 		5EC33F821B54256800E3613C /* MutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableArray.h; sourceTree = "<group>"; };
 		5EC33F831B54256800E3613C /* MutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableArray.m; sourceTree = "<group>"; };
+		6F7E48EF1B9A90BB0046B9AC /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
+		6F7E48F01B9A90BB0046B9AC /* NSArray+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				5EC33F831B54256800E3613C /* MutableArray.m */,
 				5E8C53121B52CE7900AEABDB /* Student.h */,
 				5E8C53131B52CE7900AEABDB /* Student.m */,
+				6F7E48EF1B9A90BB0046B9AC /* NSArray+Extend.h */,
+				6F7E48F01B9A90BB0046B9AC /* NSArray+Extend.m */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				5E1A0A821B53659900E28BCF /* MainScreen.m in Sources */,
 				5E8C53111B52CE5100AEABDB /* SendMessage.m in Sources */,
 				5E8C53141B52CE7900AEABDB /* Student.m in Sources */,
+				6F7E48F11B9A90BB0046B9AC /* NSArray+Extend.m in Sources */,
 				5E1A0A811B53659900E28BCF /* ConsoleScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

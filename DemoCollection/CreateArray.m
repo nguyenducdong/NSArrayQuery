@@ -7,6 +7,7 @@
 //
 
 #import "CreateArray.h"
+#import "NSArray+Extend.h"
 
 @interface CreateArray ()
 
@@ -62,7 +63,7 @@
                          @"GK Jordi Masip",@"MF	Alex Song",
                          @"MF Arda Turan",@"MF Aleix Vidal"];
     NSMutableArray *eleventPlayer = [NSMutableArray array];
-    NSMutableArray *duplicate_arr = [NSMutableArray array];
+    NSMutableArray *arrTemp = [NSMutableArray array];
     NSMutableArray *teamBarcelona = [NSMutableArray array];
 
     for (NSInteger index = 0; index < 11; index++) {
@@ -79,19 +80,37 @@
     
     for (id obj in players) {
         if (![teamBarcelona containsObject:obj]) {
-            [duplicate_arr addObject:obj];
+            [arrTemp addObject:obj];
         }
     }
     
     if (teamBarcelona.count < 11) {
         NSUInteger index = (11 - teamBarcelona.count);
         for (int x = 0; x < index; ++x) {
-            int rand = arc4random_uniform(duplicate_arr.count);
-            [teamBarcelona addObject:duplicate_arr[rand]];
+            int rand = arc4random_uniform(arrTemp.count);
+            [teamBarcelona addObject:arrTemp[rand]];
         }
     }
     for (id obj in teamBarcelona) {
         NSLog(@"player: %@",obj);
+    }
+    //----------------------------------------dung category--------------------------
+    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮Category✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    NSArray *array = [NSArray array];
+    NSMutableArray *arrayRandom = [NSMutableArray new];
+    for (NSInteger index = 0; index < 11; index++) {
+        int rand = arc4random_uniform(players.count);
+        [arrayRandom addObject:players[rand]];
+        
+    }
+     NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array random ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    for (id obj in arrayRandom) {
+        NSLog(@"arrayRandom: %@",obj);
+    }
+    array = [NSArray createArrayNotElementDuplicateWith:arrayRandom];
+    NSLog(@"✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮ Array No Duplicate ✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮✮\n");
+    for (id obj in array) {
+        NSLog(@"arrayNoDuplicate: %@",obj);
     }
     
 }
